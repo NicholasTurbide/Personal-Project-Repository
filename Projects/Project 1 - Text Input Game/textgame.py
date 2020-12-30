@@ -18,7 +18,7 @@ def choice1(answer):
 
 def context(answer):
     if answer == "farmer":
-        print("You're a humble farmer, your family has tilled your lands for generations.")
+        print("\nYou're a humble farmer, your family has tilled your lands for generations.")
         time.sleep(2)
         print("For 18 years, the beautiful scenery of the Swiss plains have served as your home.")
         time.sleep(2)
@@ -30,10 +30,39 @@ def context(answer):
         time.sleep(2)
         print("You decide that you want to leave your farm for pastures new")
         time.sleep(2)
-    #if answer == "adventurer":
-        
+        print("So you set off on an adventure of a lifetime, not knowing when you will come back.")
+    elif answer == "adventurer":
+        print("\nYou've ventured through dozens of tombs and temples")
+        time.sleep(2)
+        print("Adventure is in your blood, discovery is in your spirit, and thrill is in your body")
+        time.sleep(2)
+        print("Once more, you are setting off on an adventure, not knowing what awaits you, or when you will return to your home.")
+        time.sleep(2)
+        print("")
     #if answer == "royal guard":
-    return "bruh"
+    print(first_encounter(answer))
+    return ""
+
+def first_encounter(answer):
+    if answer == "farmer":
+        print("\nAfter having gathered your things, you leave bright and early.")
+        time.sleep(2)
+        print("You take the scenic route, taking in the scenery memories flood in like a hurricane.")
+        time.sleep(2)
+        print("You remember the first time you went on one of your woodland adventures.")
+        time.sleep(2)
+        print("\n***Flasback***")
+        time.sleep(2)
+        forest_inp1 = input("You are faced with 2 paths, the path on the right sounds like there is a waterfall nearby, the path to the left has a clearing in the forests - (Left/Right): ").lower()
+        if forest_inp1 == "left":
+            print("You walk towards the clearing, eyeing down the area, trying to see if there are any animals nearby")
+            time.sleep(2)
+            print("You spot a snowshoe hare, a species that shouldn't be on this continent!")
+            time.sleep(2)
+            print("You follow the hare")
+        if forest_inp1 == "right":
+            print("WIP")
+    return ""
 
 
 print("Welcome to my first game!")
